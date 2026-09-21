@@ -1,4 +1,7 @@
 name: Build and Package MSIX
+on:
+  push:
+    branches: [ main ]
 
 on:
   workflow_dispatch:
