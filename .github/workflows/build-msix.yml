@@ -71,3 +71,7 @@ jobs:
         with:
           name: FluentFlyout_${{ env.APP_VERSION }}_${{ env.PLATFORM }}_${{ matrix.configuration == 'GitHub Release' && 'Installer' || 'Release' }}
           path: InstallerOutput\
+on:
+  push:
+    branches: [ main ]
+
